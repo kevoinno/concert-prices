@@ -1,0 +1,871 @@
+{
+    "_embedded": {
+        "events": [
+            {
+                "name": "Tyler, The Creator - CHROMAKOPIA: THE WORLD TOUR",
+                "type": "event",
+                "id": "G5eVZb4pCXoOJ",
+                "test": false,
+                "url": "https://www.ticketmaster.com/tyler-the-creator-chromakopia-the-world-charlotte-north-carolina-03-26-2025/event/2D0061558EF91826",
+                "locale": "en-us",
+                "images": [
+                    {
+                        "ratio": "3_2",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_TABLET_LANDSCAPE_3_2.jpg",
+                        "width": 1024,
+                        "height": 683,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "16_9",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_RETINA_PORTRAIT_16_9.jpg",
+                        "width": 640,
+                        "height": 360,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "16_9",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_RECOMENDATION_16_9.jpg",
+                        "width": 100,
+                        "height": 56,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "3_2",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_ARTIST_PAGE_3_2.jpg",
+                        "width": 305,
+                        "height": 203,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "16_9",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_EVENT_DETAIL_PAGE_16_9.jpg",
+                        "width": 205,
+                        "height": 115,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "16_9",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                        "width": 2048,
+                        "height": 1152,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "4_3",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_CUSTOM.jpg",
+                        "width": 305,
+                        "height": 225,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "16_9",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_TABLET_LANDSCAPE_16_9.jpg",
+                        "width": 1024,
+                        "height": 576,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "16_9",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_RETINA_LANDSCAPE_16_9.jpg",
+                        "width": 1136,
+                        "height": 639,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "3_2",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_RETINA_PORTRAIT_3_2.jpg",
+                        "width": 640,
+                        "height": 427,
+                        "fallback": false
+                    },
+                    {
+                        "ratio": "16_9",
+                        "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_SOURCE",
+                        "width": 2426,
+                        "height": 1365,
+                        "fallback": false
+                    }
+                ],
+                "sales": {
+                    "public": {
+                        "startDateTime": "2024-11-01T14:00:00Z",
+                        "startTBD": false,
+                        "startTBA": false,
+                        "endDateTime": "2025-03-27T01:00:00Z"
+                    },
+                    "presales": [
+                        {
+                            "startDateTime": "2024-10-30T14:00:00Z",
+                            "endDateTime": "2024-11-01T02:00:00Z",
+                            "name": "Tyler, The Creator Presale"
+                        },
+                        {
+                            "startDateTime": "2024-10-31T14:00:00Z",
+                            "endDateTime": "2024-11-01T02:00:00Z",
+                            "name": "Spectrum Center Presale"
+                        },
+                        {
+                            "startDateTime": "2024-10-31T14:00:00Z",
+                            "endDateTime": "2024-11-01T02:00:00Z",
+                            "name": "Ticketmaster Presale"
+                        },
+                        {
+                            "startDateTime": "2024-10-30T14:00:00Z",
+                            "endDateTime": "2024-11-01T02:00:00Z",
+                            "name": "Official Platinum Presale"
+                        },
+                        {
+                            "startDateTime": "2024-11-01T14:00:00Z",
+                            "endDateTime": "2025-03-27T01:00:00Z",
+                            "name": "Official Platinum Onsale"
+                        },
+                        {
+                            "startDateTime": "2024-10-29T14:00:00Z",
+                            "endDateTime": "2024-11-01T02:00:00Z",
+                            "name": "Amex Presale Tickets"
+                        },
+                        {
+                            "startDateTime": "2024-10-29T14:00:00Z",
+                            "endDateTime": "2024-10-30T13:00:00Z",
+                            "name": "Amex Presale Tickets Official Platinum"
+                        },
+                        {
+                            "startDateTime": "2024-10-29T14:00:00Z",
+                            "endDateTime": "2024-10-30T13:00:00Z",
+                            "name": "American Express VIP Packages"
+                        },
+                        {
+                            "startDateTime": "2024-10-30T14:00:00Z",
+                            "endDateTime": "2024-11-01T02:00:00Z",
+                            "name": "VIP Packages Presale"
+                        },
+                        {
+                            "startDateTime": "2024-11-01T14:00:00Z",
+                            "endDateTime": "2025-03-14T21:00:00Z",
+                            "name": "VIP Packages Onsale"
+                        },
+                        {
+                            "startDateTime": "2024-11-01T14:00:00Z",
+                            "endDateTime": "2025-03-13T02:00:00Z",
+                            "name": "Amex Reserved Tickets"
+                        },
+                        {
+                            "startDateTime": "2024-11-01T14:00:00Z",
+                            "endDateTime": "2025-03-13T02:00:00Z",
+                            "name": "Amex Preferred Tickets"
+                        }
+                    ]
+                },
+                "dates": {
+                    "start": {
+                        "localDate": "2025-03-26",
+                        "localTime": "19:30:00",
+                        "dateTime": "2025-03-26T23:30:00Z",
+                        "dateTBD": false,
+                        "dateTBA": false,
+                        "timeTBA": false,
+                        "noSpecificTime": false
+                    },
+                    "timezone": "America/New_York",
+                    "status": {
+                        "code": "onsale"
+                    },
+                    "spanMultipleDays": false
+                },
+                "classifications": [
+                    {
+                        "primary": true,
+                        "segment": {
+                            "id": "KZFzniwnSyZfZ7v7nJ",
+                            "name": "Music"
+                        },
+                        "genre": {
+                            "id": "KnvZfZ7vAv1",
+                            "name": "Hip-Hop/Rap"
+                        },
+                        "subGenre": {
+                            "id": "KZazBEonSMnZfZ7vaa1",
+                            "name": "French Rap"
+                        },
+                        "type": {
+                            "id": "KZAyXgnZfZ7v7nI",
+                            "name": "Undefined"
+                        },
+                        "subType": {
+                            "id": "KZFzBErXgnZfZ7v7lJ",
+                            "name": "Undefined"
+                        },
+                        "family": false
+                    }
+                ],
+                "promoter": {
+                    "id": "830",
+                    "name": "AEG LIVE",
+                    "description": "AEG LIVE / NTL / USA"
+                },
+                "promoters": [
+                    {
+                        "id": "830",
+                        "name": "AEG LIVE",
+                        "description": "AEG LIVE / NTL / USA"
+                    }
+                ],
+                "priceRanges": [
+                    {
+                        "type": "standard",
+                        "currency": "USD",
+                        "min": 119.5,
+                        "max": 300.5
+                    }
+                ],
+                "seatmap": {
+                    "staticUrl": "https://mapsapi.tmol.io/maps/geometry/3/event/2D0061558EF91826/staticImage?type=png&systemId=HOST",
+                    "id": "seatmap"
+                },
+                "accessibility": {
+                    "info": "Wheelchair + Companion Seating: Located in all levels of the Coliseum based on event setup for particular event. \r\n\r\nMobility Impaired Patrons + Companion Seating :Located in all levels of the Coliseum based on event setup for particular event.",
+                    "ticketLimit": 4,
+                    "id": "accessibility"
+                },
+                "ageRestrictions": {
+                    "legalAgeEnforced": false,
+                    "id": "ageRestrictions"
+                },
+                "ticketing": {
+                    "safeTix": {
+                        "enabled": true,
+                        "inAppOnlyEnabled": true
+                    },
+                    "allInclusivePricing": {
+                        "enabled": false
+                    },
+                    "id": "ticketing"
+                },
+                "_links": {
+                    "self": {
+                        "href": "/discovery/v2/events/G5eVZb4pCXoOJ?locale=en-us"
+                    },
+                    "attractions": [
+                        {
+                            "href": "/discovery/v2/attractions/K8vZ9172De7?locale=en-us"
+                        },
+                        {
+                            "href": "/discovery/v2/attractions/K8vZ9174v57?locale=en-us"
+                        },
+                        {
+                            "href": "/discovery/v2/attractions/K8vZ917_9YV?locale=en-us"
+                        }
+                    ],
+                    "venues": [
+                        {
+                            "href": "/discovery/v2/venues/KovZpZA6AEIA?locale=en-us"
+                        }
+                    ]
+                },
+                "_embedded": {
+                    "venues": [
+                        {
+                            "name": "Spectrum Center ",
+                            "type": "venue",
+                            "id": "KovZpZA6AEIA",
+                            "test": false,
+                            "url": "https://www.ticketmaster.com/spectrum-center-tickets-charlotte/venue/369357",
+                            "locale": "en-us",
+                            "images": [
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dbimages/18670v.jpg",
+                                    "width": 205,
+                                    "height": 115,
+                                    "fallback": false
+                                }
+                            ],
+                            "postalCode": "28202",
+                            "timezone": "America/New_York",
+                            "city": {
+                                "name": "Charlotte"
+                            },
+                            "state": {
+                                "name": "North Carolina",
+                                "stateCode": "NC"
+                            },
+                            "country": {
+                                "name": "United States Of America",
+                                "countryCode": "US"
+                            },
+                            "address": {
+                                "line1": "333 East Trade Street"
+                            },
+                            "location": {
+                                "longitude": "-80.839921",
+                                "latitude": "35.225222"
+                            },
+                            "markets": [
+                                {
+                                    "name": "Charlotte",
+                                    "id": "2"
+                                },
+                                {
+                                    "name": "All of US",
+                                    "id": "51"
+                                },
+                                {
+                                    "name": "South Carolina",
+                                    "id": "121"
+                                }
+                            ],
+                            "dmas": [
+                                {
+                                    "id": 200
+                                },
+                                {
+                                    "id": 243
+                                },
+                                {
+                                    "id": 245
+                                },
+                                {
+                                    "id": 256
+                                },
+                                {
+                                    "id": 278
+                                },
+                                {
+                                    "id": 291
+                                }
+                            ],
+                            "boxOfficeInfo": {
+                                "phoneNumberDetail": "704-688-8600 For general group sales questions for Spectrum Center: 704.688.9047",
+                                "openHoursDetail": "Event Day: The Ticket Office opening hours will vary based on show time and event. Please call 704.688.9000 for more information.",
+                                "acceptedPaymentDetail": "American Express, MasterCard, VISA, Discover Card"
+                            },
+                            "parkingDetail": "Location: None. There are approx. 30,000 parking spaces within a 15 minute walk of Spectrum Center. Prices vary by lot.",
+                            "accessibleSeatingDetail": "This venue is accessible. For sight impaired and hearing patrons please contact the Box Office. Spectrum Center is committed to providing every guest with a comfortable and enjoyable experience. The arena is one of the most accessible arenas in the U.S. Seating throughout the venue allows guests with accessible needs flexibility in seat locations and price levels.",
+                            "generalInfo": {
+                                "generalRule": "Spectrum Center is committed to creating a safe, comfortable, and enjoyable sports and entertainment experience. Guests of Spectrum Center have a right to expect an environment where guests will: \u2022 Respect and appreciate each and every fan. \u2022 Be treated in a consistent, professional and courteous manner by all arena and team personnel. \u2022 Enjoy the arena experience free from disruptive behavior, including foul or abusive language or obscene gestures. \u2022 Consume alcoholic beverages in a responsible manner. Intervention with an impaired, intoxicated or underage guest will be handled in a prompt and safe manner \u2022 Sit only in ticketed seats and show tickets when requested. \u2022 Act in an appropriate manner without fighting, throwing objects or attempting to enter the court or stage area. \u2022 Smoke in designated smoking areas only. \u2022 Wear appropriate clothing and have signage that is free of any obscene or indecent messages. \u2022 Comply with requests from arena staff regarding arena operations and emergency response procedures. The arena staff has been trained to intervene where necessary to help ensure that the above expectations are met, and guests are encouraged to report any inappropriate behavior to the nearest event staff member. Guests who choose not to adhere to these provisions will be subject to ejection without refund and revocation of tickets and may also be in violation of the law resulting in possible arrest and prosecution.",
+                                "childRule": "Children 2 years or older must have a ticket for most events at the Spectrum Center. This age restriction can fluctuate from event to event."
+                            },
+                            "upcomingEvents": {
+                                "archtics": 174,
+                                "ticketmaster": 62,
+                                "_total": 236,
+                                "_filtered": 0
+                            },
+                            "ada": {
+                                "adaPhones": "704-688-8600",
+                                "adaCustomCopy": "Wheelchair + Companion Seating: Located in all levels of the Arena based on event setup for particular event. \n\nMobility Impaired Patrons + Companion Seating :Located in all levels of the Arena based on event setup for particular event.\n\nSight/Hearing Patrons + Companions will be accommodated directly through the Arena Box Office.",
+                                "adaHours": "Event Day: The Ticket Office opening hours will vary based on show time and event. Please call 704.688.9000 for more information."
+                            },
+                            "_links": {
+                                "self": {
+                                    "href": "/discovery/v2/venues/KovZpZA6AEIA?locale=en-us"
+                                }
+                            }
+                        }
+                    ],
+                    "attractions": [
+                        {
+                            "name": "Tyler, The Creator",
+                            "type": "attraction",
+                            "id": "K8vZ9172De7",
+                            "test": false,
+                            "url": "https://www.ticketmaster.com/tyler-the-creator-tickets/artist/1744607",
+                            "locale": "en-us",
+                            "externalLinks": {
+                                "youtube": [
+                                    {
+                                        "url": "https://www.youtube.com/user/OFWGKTA"
+                                    }
+                                ],
+                                "twitter": [
+                                    {
+                                        "url": "https://twitter.com/tylerthecreator"
+                                    }
+                                ],
+                                "itunes": [
+                                    {
+                                        "url": "https://music.apple.com/us/artist/tyler-the-creator/420368335"
+                                    }
+                                ],
+                                "lastfm": [
+                                    {
+                                        "url": "https://www.last.fm/music/Tyler,+the+Creator"
+                                    }
+                                ],
+                                "wiki": [
+                                    {
+                                        "url": "https://en.wikipedia.org/wiki/Tyler,_the_Creator"
+                                    }
+                                ],
+                                "spotify": [
+                                    {
+                                        "url": "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF"
+                                    }
+                                ],
+                                "facebook": [
+                                    {
+                                        "url": "https://www.facebook.com/TylertheCreatorOfficial"
+                                    }
+                                ],
+                                "musicbrainz": [
+                                    {
+                                        "id": "f6beac20-5dfe-4d1f-ae02-0b0a740aafd6",
+                                        "url": "https://musicbrainz.org/artist/f6beac20-5dfe-4d1f-ae02-0b0a740aafd6"
+                                    }
+                                ],
+                                "instagram": [
+                                    {
+                                        "url": "https://www.instagram.com/feliciathegoat/?hl=en"
+                                    }
+                                ]
+                            },
+                            "aliases": [
+                                "tyler"
+                            ],
+                            "images": [
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_TABLET_LANDSCAPE_3_2.jpg",
+                                    "width": 1024,
+                                    "height": 683,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_RETINA_PORTRAIT_16_9.jpg",
+                                    "width": 640,
+                                    "height": 360,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_RECOMENDATION_16_9.jpg",
+                                    "width": 100,
+                                    "height": 56,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_ARTIST_PAGE_3_2.jpg",
+                                    "width": 305,
+                                    "height": 203,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_EVENT_DETAIL_PAGE_16_9.jpg",
+                                    "width": 205,
+                                    "height": 115,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                                    "width": 2048,
+                                    "height": 1152,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "4_3",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_CUSTOM.jpg",
+                                    "width": 305,
+                                    "height": 225,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_TABLET_LANDSCAPE_16_9.jpg",
+                                    "width": 1024,
+                                    "height": 576,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_RETINA_LANDSCAPE_16_9.jpg",
+                                    "width": 1136,
+                                    "height": 639,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_RETINA_PORTRAIT_3_2.jpg",
+                                    "width": 640,
+                                    "height": 427,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/3a3/04ee9987-d0dd-41f6-a169-afc7727293a3_SOURCE",
+                                    "width": 2426,
+                                    "height": 1365,
+                                    "fallback": false
+                                }
+                            ],
+                            "classifications": [
+                                {
+                                    "primary": true,
+                                    "segment": {
+                                        "id": "KZFzniwnSyZfZ7v7nJ",
+                                        "name": "Music"
+                                    },
+                                    "genre": {
+                                        "id": "KnvZfZ7vAv1",
+                                        "name": "Hip-Hop/Rap"
+                                    },
+                                    "subGenre": {
+                                        "id": "KZazBEonSMnZfZ7vkdA",
+                                        "name": "Urban"
+                                    },
+                                    "type": {
+                                        "id": "KZAyXgnZfZ7v7nI",
+                                        "name": "Undefined"
+                                    },
+                                    "subType": {
+                                        "id": "KZFzBErXgnZfZ7v7lJ",
+                                        "name": "Undefined"
+                                    },
+                                    "family": false
+                                }
+                            ],
+                            "upcomingEvents": {
+                                "mfx-cz": 1,
+                                "mfx-dk": 1,
+                                "ticketnet": 2,
+                                "mfx-be": 1,
+                                "mfx-nl": 3,
+                                "tmr": 13,
+                                "ticketmaster": 60,
+                                "mfx-no": 2,
+                                "_total": 83,
+                                "_filtered": 0
+                            },
+                            "_links": {
+                                "self": {
+                                    "href": "/discovery/v2/attractions/K8vZ9172De7?locale=en-us"
+                                }
+                            }
+                        },
+                        {
+                            "name": "Lil Yachty",
+                            "type": "attraction",
+                            "id": "K8vZ9174v57",
+                            "test": false,
+                            "url": "https://www.ticketmaster.com/lil-yachty-tickets/artist/2240244",
+                            "locale": "en-us",
+                            "externalLinks": {
+                                "youtube": [
+                                    {
+                                        "url": "https://www.youtube.com/channel/UCNTu7P3IyRRKJtibrrXG0Yg"
+                                    }
+                                ],
+                                "twitter": [
+                                    {
+                                        "url": "https://twitter.com/lilyachty"
+                                    }
+                                ],
+                                "itunes": [
+                                    {
+                                        "url": "https://music.apple.com/us/artist/lil-yachty/1080733657"
+                                    }
+                                ],
+                                "spotify": [
+                                    {
+                                        "url": "https://open.spotify.com/artist/6icQOAFXDZKsumw3YXyusw?autoplay=true"
+                                    }
+                                ],
+                                "facebook": [
+                                    {
+                                        "url": "https://www.facebook.com/lilyachtysailingteam"
+                                    }
+                                ],
+                                "musicbrainz": [
+                                    {
+                                        "id": "a668565b-41b8-44a8-9d5c-8e609dbf69fc",
+                                        "url": "https://musicbrainz.org/artist/a668565b-41b8-44a8-9d5c-8e609dbf69fc"
+                                    }
+                                ],
+                                "instagram": [
+                                    {
+                                        "url": "https://www.instagram.com/lilyachty/"
+                                    }
+                                ],
+                                "homepage": [
+                                    {
+                                        "url": "http://www.lilyachtyofficial.com/"
+                                    }
+                                ]
+                            },
+                            "images": [
+                                {
+                                    "ratio": "4_3",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_CUSTOM.jpg",
+                                    "width": 305,
+                                    "height": 225,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_RECOMENDATION_16_9.jpg",
+                                    "width": 100,
+                                    "height": 56,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_TABLET_LANDSCAPE_3_2.jpg",
+                                    "width": 1024,
+                                    "height": 683,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_EVENT_DETAIL_PAGE_16_9.jpg",
+                                    "width": 205,
+                                    "height": 115,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_RETINA_PORTRAIT_3_2.jpg",
+                                    "width": 640,
+                                    "height": 427,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_SOURCE",
+                                    "width": 2426,
+                                    "height": 1365,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                                    "width": 2048,
+                                    "height": 1152,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_ARTIST_PAGE_3_2.jpg",
+                                    "width": 305,
+                                    "height": 203,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_TABLET_LANDSCAPE_16_9.jpg",
+                                    "width": 1024,
+                                    "height": 576,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_RETINA_PORTRAIT_16_9.jpg",
+                                    "width": 640,
+                                    "height": 360,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/7d7/dae6fe28-1a86-424b-a655-ebf8071cb7d7_RETINA_LANDSCAPE_16_9.jpg",
+                                    "width": 1136,
+                                    "height": 639,
+                                    "fallback": false
+                                }
+                            ],
+                            "classifications": [
+                                {
+                                    "primary": true,
+                                    "segment": {
+                                        "id": "KZFzniwnSyZfZ7v7nJ",
+                                        "name": "Music"
+                                    },
+                                    "genre": {
+                                        "id": "KnvZfZ7vAv1",
+                                        "name": "Hip-Hop/Rap"
+                                    },
+                                    "subGenre": {
+                                        "id": "KZazBEonSMnZfZ7vkvl",
+                                        "name": "Hip-Hop/Rap"
+                                    },
+                                    "type": {
+                                        "id": "KZAyXgnZfZ7v7la",
+                                        "name": "Individual"
+                                    },
+                                    "subType": {
+                                        "id": "KZFzBErXgnZfZ7vAd7",
+                                        "name": "Musician"
+                                    },
+                                    "family": false
+                                }
+                            ],
+                            "upcomingEvents": {
+                                "mfx-be": 1,
+                                "ticketmaster": 47,
+                                "mfx-cz": 1,
+                                "mfx-nl": 1,
+                                "tmr": 13,
+                                "_total": 63,
+                                "_filtered": 0
+                            },
+                            "_links": {
+                                "self": {
+                                    "href": "/discovery/v2/attractions/K8vZ9174v57?locale=en-us"
+                                }
+                            }
+                        },
+                        {
+                            "name": "Paris Texas",
+                            "type": "attraction",
+                            "id": "K8vZ917_9YV",
+                            "test": false,
+                            "url": "https://www.ticketmaster.com/paris-texas-tickets/artist/2787073",
+                            "locale": "en-us",
+                            "images": [
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                                    "width": 2048,
+                                    "height": 1152,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_ARTIST_PAGE_3_2.jpg",
+                                    "width": 305,
+                                    "height": 203,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_RETINA_LANDSCAPE_16_9.jpg",
+                                    "width": 1136,
+                                    "height": 639,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_TABLET_LANDSCAPE_16_9.jpg",
+                                    "width": 1024,
+                                    "height": 576,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_EVENT_DETAIL_PAGE_16_9.jpg",
+                                    "width": 205,
+                                    "height": 115,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "4_3",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_CUSTOM.jpg",
+                                    "width": 305,
+                                    "height": 225,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_SOURCE",
+                                    "width": 2430,
+                                    "height": 1365,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_RETINA_PORTRAIT_3_2.jpg",
+                                    "width": 640,
+                                    "height": 427,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_RETINA_PORTRAIT_16_9.jpg",
+                                    "width": 640,
+                                    "height": 360,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_TABLET_LANDSCAPE_3_2.jpg",
+                                    "width": 1024,
+                                    "height": 683,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/043/41f7496e-5b42-4824-811f-fab290677043_RECOMENDATION_16_9.jpg",
+                                    "width": 100,
+                                    "height": 56,
+                                    "fallback": false
+                                }
+                            ],
+                            "classifications": [
+                                {
+                                    "primary": true,
+                                    "segment": {
+                                        "id": "KZFzniwnSyZfZ7v7nJ",
+                                        "name": "Music"
+                                    },
+                                    "genre": {
+                                        "id": "KnvZfZ7vAv1",
+                                        "name": "Hip-Hop/Rap"
+                                    },
+                                    "subGenre": {
+                                        "id": "KZazBEonSMnZfZ7vkvl",
+                                        "name": "Hip-Hop/Rap"
+                                    },
+                                    "type": {
+                                        "id": "KZAyXgnZfZ7v7l1",
+                                        "name": "Group"
+                                    },
+                                    "subType": {
+                                        "id": "KZFzBErXgnZfZ7vA71",
+                                        "name": "Band"
+                                    },
+                                    "family": false
+                                }
+                            ],
+                            "upcomingEvents": {
+                                "mfx-cz": 1,
+                                "mfx-be": 1,
+                                "tmr": 13,
+                                "mfx-nl": 1,
+                                "ticketmaster": 48,
+                                "_total": 64,
+                                "_filtered": 0
+                            },
+                            "_links": {
+                                "self": {
+                                    "href": "/discovery/v2/attractions/K8vZ917_9YV?locale=en-us"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "_links": {
+        "first": {
+            "href": "/discovery/v2/events.json?countryCode=US&keyword=Tyler+The+Creator&page=0&size=1"
+        },
+        "self": {
+            "href": "/discovery/v2/events.json?size=1&countryCode=US&keyword=Tyler+The+Creator"
+        },
+        "next": {
+            "href": "/discovery/v2/events.json?countryCode=US&keyword=Tyler+The+Creator&page=1&size=1"
+        },
+        "last": {
+            "href": "/discovery/v2/events.json?countryCode=US&keyword=Tyler+The+Creator&page=101&size=1"
+        }
+    },
+    "page": {
+        "size": 1,
+        "totalElements": 102,
+        "totalPages": 102,
+        "number": 0
+    }
+}
