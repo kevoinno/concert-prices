@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 def transform(events, event_details, venues_list):
     """
@@ -9,10 +10,14 @@ def transform(events, event_details, venues_list):
     Outputs the cleaned dataframes
     """
     # Clean dates in the event_details table
-    event_details['event_start_date'] = pd.to_datetime(event_details['event_start_date']).dt.date
-    event_details['public_sales_start'] = pd.to_datetime(event_details['public_sales_start']).dt.date
-    event_details['public_sales_end'] = pd.to_datetime(event_details['public_sales_end']).dt.date
-    event_details['presale_start'] = pd.to_datetime(event_details['presale_start']).dt.date
-    event_details['presale_end'] = pd.to_datetime(event_details['presale_end']).dt.date
-
+    if event_details is not None:
+        event_details['event_start_date'] = pd.to_datetime(event_details['event_start_date']).dt.date
+        event_details['public_sales_start'] = pd.to_datetime(event_details['public_sales_start']).dt.date
+        event_details['public_sales_end'] = pd.to_datetime(event_details['public_sales_end']).dt.date
+        event_details['presale_start'] = pd.to_datetime(event_details['presale_start']).dt.date
+        event_details['presale_end'] = pd.to_datetime(event_details['presale_end']).dt.date
+        
+        # Fill NaT values with None
+        event_details = event_details.replace({np.nan: None})
+    
     return events, event_details, venues_list

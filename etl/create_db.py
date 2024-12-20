@@ -72,18 +72,20 @@ CREATE TABLE IF NOT EXISTS events
 """)
 
 pgcursor.execute("""
-
+                 
 CREATE TABLE IF NOT EXISTS event_details
 (
     id SERIAL,
-    event_id VARCHAR(50), 
-    name VARCHAR(30),
-    genre VARCHAR(15),
+    event_id VARCHAR(50) PRIMARY KEY, 
+    name VARCHAR(50),
+    genre VARCHAR(50),
     event_start_date DATE,
     public_sales_start DATE,
     public_sales_end DATE,
     presale_start DATE,
-    presale_end DATE
+    presale_end DATE,
+    tracking INT,
+    last_tracked DATE
 );
 
 """)
@@ -92,11 +94,11 @@ pgcursor.execute("""
 
 CREATE TABLE IF NOT EXISTS venues
 (
-    id VARCHAR(50),
+    id VARCHAR(50) PRIMARY KEY,
     event_id VARCHAR(50),
     city VARCHAR(20),
     state VARCHAR(2),
-    name VARCHAR(20)
+    venue_name VARCHAR(20)
 );
 
 """)

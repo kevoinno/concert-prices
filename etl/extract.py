@@ -29,8 +29,13 @@ def search_event(key, keyword, city=None):
 
     else:
         print(f"API Call failed. Response Status Code {response.status_code}")
-        return None
+        return None, None, None
     
+    # Check if search was valid
+    if data.get('_embedded', -1) == -1:
+        print('Search had no results')
+        return None, None, None
+
     # Extract info for events
     events = []
     event_details = []
@@ -84,7 +89,9 @@ def search_event(key, keyword, city=None):
             'public_sales_start' : public_sales_start,
             'public_sales_end' : public_sales_end,
             'presale_start' : presale_start,
-            'presale_end' : presale_end
+            'presale_end' : presale_end,
+            'tracking' : 1 if date_scraped <= event_start_date else 0, # 1 if currently tracking 0 if not
+            'last_tracked' : date_scraped
         }
 
         venues_dict = {
@@ -105,4 +112,3 @@ def search_event(key, keyword, city=None):
         events_details_df = pd.DataFrame(event_details)
         venues_df = pd.DataFrame(venues)
     return events_df, events_details_df, venues_df
-
