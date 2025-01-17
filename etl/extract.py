@@ -119,93 +119,114 @@ def search_event(key: str, keyword: str, city: Optional[str] = None):
         print(f"Error occurred: {str(e)}")
         return None, None, None
 
-def track_current_events(airflow=False, **kwargs):
+def track_current_events():
     """
-    Gets most recent prices of events that are currently being tracked.
-    
-    Args:
-        airflow: True if running in Airflow, False if running locally
-        kwargs: Keyword arguments (needed for Airflow)
+    Gets current prices for all tracked events.
+    Also updates tracking to 0 for events that have passed.
     
     Returns:
-        Tuple of (events_df, event_details_df)
+        events_df: DataFrame with current prices (matches events table structure)
+        event_details_tracking_df: DataFrame with event details (matches event_details table structure)
     """
-    # Load environment variables
-    load_dotenv(dotenv_path='/opt/airflow/.env')
-    api_key = os.getenv('CONSUMER_KEY')
-    pg_user = os.getenv('POSTGRESQL_USER')
-    pg_password = os.getenv('POSTGRESQL_PASSWORD')
+    try:
+        # 1. Set up database and API connections
+        load_dotenv()
+        api_key = os.getenv('CONSUMER_KEY')
+        pg_user = os.getenv('POSTGRESQL_USER')
+        pg_password = os.getenv('POSTGRESQL_PASSWORD')
 
-    # Create database connection
-    if airflow:
-        host_name = 'host.docker.internal:5432'
-    else:
-        host_name = 'localhost'
-    
-    engine = create_engine(f"postgresql+psycopg2://{pg_user}:{pg_password}@{host_name}/ticket_trail_db")
+        # 2. Create database connection (using psycopg2 directly)
+        conn = psycopg2.connect(
+            host=os.getenv('POSTGRESQL_HOST'),
+            database="ticket_trail_db",
+            user=os.getenv('POSTGRESQL_USER'),
+            password=os.getenv('POSTGRESQL_PASSWORD')
+        )
 
-    # Get events that are being tracked
-    event_details_tracking_df = pd.read_sql('SELECT * FROM event_details WHERE tracking = 1', con=engine)
-    
-    # Prepare lists to store results
-    events = []
-    failed_events = []  # New: Track any events that fail to update
-    
-    # Update last_tracked date for all events
-    current_date = datetime.now().strftime('%Y-%m-%d')
-    event_details_tracking_df['last_tracked'] = current_date
+        # 3. Get all events that we're tracking
+        query = """
+            SELECT *
+            FROM event_details
+            WHERE tracking = 1
+        """
+        event_details_tracking_df = pd.read_sql(query, con=conn)
 
-    # Get latest prices for each event
-    for event_id in event_details_tracking_df['event_id'].unique(): 
-        try:
-            # Set up API call
-            url = f"https://app.ticketmaster.com/discovery/v2/events/{event_id}.json"
-            params = {
-                'apikey': api_key,  # Fixed: using api_key instead of key
-                'id': event_id
-            }
+        if event_details_tracking_df.empty:
+            print("No events are currently being tracked")
+            return None, None
 
-            # Make API call 
-            response = requests.get(url, params, timeout=10)  # Added timeout
+        # 4. Update tracking status and last_tracked date
+        current_date = datetime.now().strftime('%Y-%m-%d')
+        current_date_dt = datetime.strptime(current_date, '%Y-%m-%d').date()
+        
+        # Update tracking status based on event date
+        event_details_tracking_df['last_tracked'] = current_date
+        event_details_tracking_df['tracking'] = event_details_tracking_df.apply(
+            lambda row: 0 if pd.to_datetime(row['event_start_date']).date() <= current_date_dt else 1, 
+            axis=1
+        )
+
+        # 5. Get current prices (rest of your existing code)
+        events_data = []
+        for _, row in event_details_tracking_df.iterrows():
+            event_id = row['event_id']
             
-            if response.status_code == 200:
-                data = response.json()
+            # Skip if we just marked this event as not tracking
+            if row['tracking'] == 0:
+                print(f"Event {event_id} has passed and will no longer be tracked")
+                continue
                 
-                # Get current price
-                min_ticket_price = data['priceRanges'][0]['min']
+            try:
+                url = f"https://app.ticketmaster.com/discovery/v2/events/{event_id}.json"
+                response = requests.get(
+                    url, 
+                    params={'apikey': api_key}, 
+                    timeout=10
+                )
                 
-                # Create event dictionary
-                events_dict = {
-                    'id': event_id,
-                    'min_ticket_price': min_ticket_price,
-                    'date_scraped': current_date
-                }
-                
-                # Add to events list
-                events.append(events_dict)
-            else:
-                print(f"Failed to get data for event {event_id}. Status code: {response.status_code}")
-                failed_events.append(event_id)
-                
-        except Exception as e:
-            print(f"Error processing event {event_id}: {str(e)}")
-            failed_events.append(event_id)
-    
-    # Convert results to DataFrame
-    if events:  # Only create DataFrame if we have events
-        events_df = pd.DataFrame(events)
-    else:
-        events_df = pd.DataFrame()  # Empty DataFrame if no successful updates
-    
-    # If running in Airflow, push to XCom
-    if airflow and 'ti' in kwargs:
-        kwargs['ti'].xcom_push(key='events', value=events_df)
-        kwargs['ti'].xcom_push(key='events_details', value=event_details_tracking_df)
-    
-    # Print summary
-    print(f"Successfully updated {len(events)} events")
-    if failed_events:
-        print(f"Failed to update {len(failed_events)} events: {failed_events}")
+                if response.status_code == 200:
+                    data = response.json()
+                    min_price = data['priceRanges'][0]['min']
+                    
+                    events_data.append({
+                        'id': event_id,
+                        'min_ticket_price': min_price,
+                        'date_scraped': current_date
+                    })
+                    print(f"Updated price for event {event_id}: ${min_price}")
+                else:
+                    print(f"Failed to get data for event {event_id}")
+                    
+            except Exception as e:
+                print(f"Error processing event {event_id}: {str(e)}")
+                continue
 
-    return events_df, event_details_tracking_df
+        # 6. Create events DataFrame
+        if events_data:
+            events_df = pd.DataFrame(events_data)
+        else:
+            print("No price updates were successful")
+            return None, None
+
+        # 7. Update database with new tracking status
+        cursor = conn.cursor()
+        for _, row in event_details_tracking_df.iterrows():
+            cursor.execute("""
+                UPDATE event_details 
+                SET tracking = %s, last_tracked = %s
+                WHERE event_id = %s
+            """, (row['tracking'], current_date, row['event_id']))
+        
+        # 8. Commit changes and close connections
+        conn.commit()
+        cursor.close()
+        conn.close()
+
+        return events_df, event_details_tracking_df
+
+    except Exception as e:
+        print(f"Error in track_current_events: {str(e)}")
+        if 'conn' in locals():
+            conn.close()
+        return None, None
   

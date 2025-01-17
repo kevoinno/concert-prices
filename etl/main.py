@@ -3,7 +3,6 @@ from transform import transform
 from load import load_to_sql
 from dotenv import load_dotenv
 import os
-import time
 
 def main():
     # Load environment variables
@@ -50,23 +49,27 @@ def main():
         print(f"Initial Price: ${events_df['min_ticket_price'].iloc[0]}")
         print(f"Venue: {venues_df['venue_name'].iloc[0]}, {venues_df['city'].iloc[0]}, {venues_df['state'].iloc[0]}")
 
-        # Step 4: Test Price Tracking
+        # Step 4: Track Prices and Load Updates
         print("\n=== Testing Price Tracking ===")
-        print("Tracking prices...")
+        print("Checking tracked events...")
         
-        tracked_events_df, tracked_details_df = track_current_events(airflow=False)
+        tracked_events_df, tracked_details_df = track_current_events()
         
-        if tracked_events_df is not None and not tracked_events_df.empty:
-            print("\nTracked Event Updates:")
-            for _, event in tracked_events_df.iterrows():
-                print(f"Event ID: {event['id']}")
-                print(f"Current Price: ${event['min_ticket_price']}")
-                print(f"Date Scraped: {event['date_scraped']}")
+        if tracked_events_df is not None and not tracked_details_df.empty:
+            # Load both price updates and tracking status updates
+            print("\n--- Loading Updates ---")
+            load_to_sql(
+                pg_user=pg_user,
+                pg_password=pg_password,
+                events=tracked_events_df,        # New prices
+                event_details=tracked_details_df, # Updated tracking status
+                venues=None                      # No venue updates needed
+            )
         else:
-            print("No events were tracked. This might mean:")
-            print("1. The event isn't marked for tracking")
-            print("2. The event has already passed")
-            print("3. There was an error getting the updated price")
+            print("\nNo events were tracked. This might mean:")
+            print("1. No events are marked for tracking in the database")
+            print("2. All tracked events have passed")
+            print("3. There was an error getting the updated prices")
 
     except Exception as e:
         print(f"\nError occurred: {str(e)}")

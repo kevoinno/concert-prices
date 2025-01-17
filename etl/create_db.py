@@ -18,15 +18,24 @@ import os
 load_dotenv()
 pg_user = os.getenv('POSTGRESQL_USER')
 pg_password = os.getenv('POSTGRESQL_PASSWORD')
+pg_host = os.getenv('POSTGRESQL_HOST')
 
-# Create connection
+print(f"Host: {pg_host}")
+print(f"User: {pg_user}")
+print(f"Password: {pg_password}")
+print("Attempting to connect to PostgreSQL...")
+
+# Before first connection
+print("Creating initial connection...")
 pgconn = psycopg2.connect(
-    host = 'localhost',
+    host = pg_host,
     port = '5432',
     user = pg_user,
     password = pg_password,
     database = 'postgres'
 )
+
+print("Connection successful!")
 
 # Create cursor
 pgcursor = pgconn.cursor()
@@ -46,7 +55,7 @@ pgconn.close()
 
 # Connect to ticket trail db
 pgconn = psycopg2.connect(
-    host = 'localhost',
+    host = pg_host,
     port = '5432',
     user = pg_user,
     password = pg_password,
